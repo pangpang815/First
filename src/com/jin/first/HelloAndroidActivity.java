@@ -11,7 +11,8 @@ public class HelloAndroidActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.main);
+//		setContentView(R.layout.main);
+		setContentView(R.layout.linear);
 		
 		TextView textView01 = (TextView)findViewById(R.id.TextView01);
 		String text = textView01.getText().toString();
