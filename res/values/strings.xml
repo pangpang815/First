@@ -9,6 +9,7 @@
 
     <string name="type1">Type here </string>
     <string name="btn_ok">OK</string>
-    <string name="btn_cancel>Cancel</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_finish">Finish</string>
 
 </resources>
