@@ -6,10 +6,17 @@
     <string name="hello_world">Hello world!</string>
     <string name="hello">hello world, HelloAndroidActivity</string>
     <string name="love">I\'m In Love</string>
-
     <string name="type1">Type here </string>
     <string name="btn_ok">OK</string>
     <string name="btn_cancel">Cancel</string>
     <string name="btn_finish">Finish</string>
+    <string name="btn_next">Next</string>
+    <string name="apple">Apple</string>
+    <string name="banana">Banana</string>
+    <string name="strawberry">Strawberry</string>
+    <string name="watermelon">Water Melon</string>
+    <string name="title_activity_image">ImageActivity</string>
 
+    <string name="fontSize">Font Size</string>
+    <string name="fontColor">Font Color</string>
 </resources>
