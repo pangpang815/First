@@ -19,4 +19,6 @@
 
     <string name="fontSize">Font Size</string>
     <string name="fontColor">Font Color</string>
+    <string name="btn_dial">다이얼 윈도우 열기</string>
+    <string name="btn_browser">인터넷 하기</string>
 </resources>
