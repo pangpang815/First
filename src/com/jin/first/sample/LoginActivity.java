@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import com.jin.first.R;
 
@@ -14,18 +16,32 @@ public class LoginActivity extends Activity {
 
 	static final int REQ_DIAL = 1;
 	static final int REQ_BROWSER = 1;
+	static final int REQUEST_CODE = 1;
 	
 	Button okBtn;
 	Button dialBtn;
 	Button browserBtn;
 	
+	EditText email;
+	
+	Intent intent;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.login);
+		intent = getIntent();
+//		String intentedStr = intent.getStringExtra("text");
+		Bundle extras = intent.getExtras();
+		String text = extras.getString("text");
+		String activity = extras.getString("activity");
 		
 		okBtn = (Button) findViewById(R.id.sign_ok);
 		okBtn.setOnClickListener(okListener);
+		
+		email = (EditText) findViewById(R.id.email);
+//		email.setText(intentedStr);
+		email.setText(text + "  " + activity);
 		
 		findViewById(R.id.dial).setOnClickListener(intentListener);
 		findViewById(R.id.browser).setOnClickListener(intentListener);
@@ -71,6 +87,6 @@ public class LoginActivity extends Activity {
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		super.onActivityResult(requestCode, resultCode, data);
-		setTitle(String.valueOf(resultCode));
+		setTitle(String.valueOf(requestCode));
 	}
 }
